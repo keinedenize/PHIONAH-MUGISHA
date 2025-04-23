@@ -24,4 +24,7 @@ UPDATE tblStudent
 SET StudentName = 'Nelson'
 WHERE StudentID = 26;
 
-
+SELECT
+  MAX(Tuition_Fee) AS Highest_Amount FROM Finance,
+  MIN(Tuition_Fee) AS Lowest_Amount FROM Finance
+FROM tblFinance;
